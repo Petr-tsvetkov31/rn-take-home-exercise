@@ -86,7 +86,7 @@ src/
 
    - Use Zustand stores for global state
    - Keep state minimal and focused
-   - Example: `useQuestionV2((s) => s.question)`
+   - Example: `useQuestion((s) => s.question)`
 
 2. **Component Structure**
 

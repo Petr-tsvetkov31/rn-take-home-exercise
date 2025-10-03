@@ -1,5 +1,5 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { Status, useQuestionV2 } from '../../zus-store/question-store-v2'
+import { Status, useQuestion } from '../../zus-store/question-store'
 
 function SubmitButton({
   onPress,
@@ -8,7 +8,7 @@ function SubmitButton({
   onPress: () => void
   disabled: boolean
 }) {
-  const status = useQuestionV2((s) => s.status)
+  const status = useQuestion((s) => s.status)
 
   function getButtonProps() {
     switch (status) {
@@ -63,9 +63,9 @@ type Props = {
 }
 
 export default function SubmitSection({ onSubmit }: Props) {
-  const status = useQuestionV2((s) => s.status)
-  const onCheckAnswer = useQuestionV2((s) => s.onCheckAnswer)
-  const onReset = useQuestionV2((s) => s.onReset)
+  const status = useQuestion((s) => s.status)
+  const onCheckAnswer = useQuestion((s) => s.onCheckAnswer)
+  const onReset = useQuestion((s) => s.onReset)
   const success = status === 'success'
   const failed = status === 'failed'
   const progress = status === 'progress'

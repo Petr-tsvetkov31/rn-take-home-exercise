@@ -11,6 +11,7 @@ export default function (props: Props) {
 
   switch (question.questionData.questionType) {
     case 'mcq':
+    case 'single':
       return <MultipleQuestion />
     case 'sort':
       return <SortQuestion />

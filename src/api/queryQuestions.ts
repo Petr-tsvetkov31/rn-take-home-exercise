@@ -6,9 +6,17 @@ export type SortQuestionData = {
   options: Array<{
     option: string
   }>
-  correctAnswer: string
+  correctAnswers: Array<string>
   categories: Array<string>
   correct_answer_mapping: Record<string, Array<string>>
+}
+
+export type SingularQuestionData = {
+  questionType: 'single'
+  options: Array<{
+    option: string
+  }>
+  correctAnswers: string
 }
 
 export type MultipleQuestionData = {
@@ -16,12 +24,13 @@ export type MultipleQuestionData = {
   options: Array<{
     option: string
   }>
-  correctAnswer: string
-  categories: null
-  correct_answer_mapping: null
+  correctAnswers: Array<string>
 }
 
-export type QuestionData = MultipleQuestionData | SortQuestionData
+export type QuestionData =
+  | SingularQuestionData
+  | MultipleQuestionData
+  | SortQuestionData
 
 export type Question = {
   index: number

@@ -1,5 +1,5 @@
 import { StyleSheet, Text, TouchableOpacity } from 'react-native'
-import { useQuestionV2 } from '../../zus-store/question-store-v2'
+import { useQuestion } from '../../zus-store/question-store'
 
 export type SelectableOption = {
   index: number
@@ -22,7 +22,7 @@ function Option(props: OptionProps) {
     onPress(index)
   }
 
-  const status = useQuestionV2((s) => s.status)
+  const status = useQuestion((s) => s.status)
   const success = status === 'success'
   const failed = status === 'failed'
   const selectedStyle = selected
@@ -44,8 +44,8 @@ function Option(props: OptionProps) {
 }
 
 export default function MultipleQuestion() {
-  const selectedOptions = useQuestionV2((s) => s.options)
-  const setSelectedOptions = useQuestionV2((s) => s.onSelect)
+  const selectedOptions = useQuestion((s) => s.options)
+  const setSelectedOptions = useQuestion((s) => s.onSelect)
 
   const onPress = (optionIndex: number) => {
     setSelectedOptions(optionIndex)

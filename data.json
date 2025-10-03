@@ -6,14 +6,14 @@
       "heading": "In which century did the Renaissance primarily occur?",
       "description": "The Renaissance was a period of cultural rebirth in Europe, marked by renewed interest in art, science, and classical learning.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "13th-14th centuries"},
-          {"option": "14th-17th centuries"},
-          {"option": "16th-18th centuries"},
-          {"option": "18th-19th centuries"}
+          { "option": "13th-14th centuries" },
+          { "option": "14th-17th centuries" },
+          { "option": "16th-18th centuries" },
+          { "option": "18th-19th centuries" }
         ],
-        "correctAnswer": "14th-17th centuries",
+        "correctAnswers": "14th-17th centuries",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -21,17 +21,17 @@
     {
       "index": 1,
       "title": "Geography",
-      "heading": "What is the capital of Australia?",
+      "heading": "[WRONG Example] What is the capital of Australia?",
       "description": "Australia's capital is often confused with its largest cities, but it's actually a planned city built specifically to serve as the capital.",
       "questionData": {
         "questionType": "mcq",
         "options": [
-          {"option": "Sydney"},
-          {"option": "Melbourne"},
-          {"option": "Canberra"},
-          {"option": "Perth"}
+          { "option": "Sydney" },
+          { "option": "Melbourne" },
+          { "option": "Canberra" },
+          { "option": "Perth" }
         ],
-        "correctAnswer": "Canberra",
+        "correctAnswers": ["Canberra", "Sydney"],
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -42,14 +42,14 @@
       "heading": "What is the chemical symbol for gold?",
       "description": "Chemical symbols often derive from Latin names rather than English names of elements.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Go"},
-          {"option": "Gd"},
-          {"option": "Au"},
-          {"option": "Ag"}
+          { "option": "Go" },
+          { "option": "Gd" },
+          { "option": "Au" },
+          { "option": "Ag" }
         ],
-        "correctAnswer": "Au",
+        "correctAnswers": "Au",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -60,14 +60,14 @@
       "heading": "Who wrote the novel '1984'?",
       "description": "This dystopian novel has become synonymous with themes of surveillance and totalitarian government control.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Aldous Huxley"},
-          {"option": "George Orwell"},
-          {"option": "Ray Bradbury"},
-          {"option": "H.G. Wells"}
+          { "option": "Aldous Huxley" },
+          { "option": "George Orwell" },
+          { "option": "Ray Bradbury" },
+          { "option": "H.G. Wells" }
         ],
-        "correctAnswer": "George Orwell",
+        "correctAnswers": "George Orwell",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -78,14 +78,14 @@
       "heading": "How many strings does a standard guitar have?",
       "description": "The modern guitar design has been standardized for centuries, though variations exist for different musical styles.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "4"},
-          {"option": "5"},
-          {"option": "6"},
-          {"option": "7"}
+          { "option": "4" },
+          { "option": "5" },
+          { "option": "6" },
+          { "option": "7" }
         ],
-        "correctAnswer": "6",
+        "correctAnswers": "6",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -96,14 +96,14 @@
       "heading": "What is the value of π (pi) to two decimal places?",
       "description": "Pi is a mathematical constant representing the ratio of a circle's circumference to its diameter.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "3.12"},
-          {"option": "3.14"},
-          {"option": "3.16"},
-          {"option": "3.18"}
+          { "option": "3.12" },
+          { "option": "3.14" },
+          { "option": "3.16" },
+          { "option": "3.18" }
         ],
-        "correctAnswer": "3.14",
+        "correctAnswers": "3.14",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -114,14 +114,14 @@
       "heading": "In which sport would you perform a slam dunk?",
       "description": "This athletic move involves forcefully putting the ball through the hoop from above the rim.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Tennis"},
-          {"option": "Basketball"},
-          {"option": "Volleyball"},
-          {"option": "Football"}
+          { "option": "Tennis" },
+          { "option": "Basketball" },
+          { "option": "Volleyball" },
+          { "option": "Football" }
         ],
-        "correctAnswer": "Basketball",
+        "correctAnswers": "Basketball",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -132,14 +132,14 @@
       "heading": "Which animal is known as the 'King of the Jungle'?",
       "description": "Despite the nickname, this animal actually primarily lives in grasslands and savannas rather than jungles.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Tiger"},
-          {"option": "Lion"},
-          {"option": "Elephant"},
-          {"option": "Gorilla"}
+          { "option": "Tiger" },
+          { "option": "Lion" },
+          { "option": "Elephant" },
+          { "option": "Gorilla" }
         ],
-        "correctAnswer": "Lion",
+        "correctAnswers": "Lion",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -151,14 +151,19 @@
       "description": "Understanding food categories helps in making balanced dietary choices and meal planning.",
       "questionData": {
         "questionType": "sort",
-        "options": [
-          {"option": "Chicken breast"}
+        "options": [{ "option": "Chicken breast" }],
+        "correctAnswers": "Categorize by primary macronutrient",
+        "categories": [
+          "Primarily Protein",
+          "Primarily Carbohydrate",
+          "Primarily Fat",
+          "Primarily Fiber"
         ],
-        "correctAnswer": "Categorize by primary macronutrient",
-        "categories": ["Primarily Protein", "Primarily Carbohydrate"],
         "correct_answer_mapping": {
           "Primarily Protein": ["Chicken breast"],
-          "Primarily Carbohydrate": []
+          "Primarily Carbohydrate": [],
+          "Primarily Fat": [],
+          "Primarily Fiber": []
         }
       }
     },
@@ -168,14 +173,14 @@
       "heading": "What does 'WWW' stand for?",
       "description": "This acronym represents the system of interlinked hypertext documents accessed via the Internet.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "World Wide Web"},
-          {"option": "World Wild West"},
-          {"option": "World War Won"},
-          {"option": "World Wide Watch"}
+          { "option": "World Wide Web" },
+          { "option": "World Wild West" },
+          { "option": "World War Won" },
+          { "option": "World Wide Watch" }
         ],
-        "correctAnswer": "World Wide Web",
+        "correctAnswers": "World Wide Web",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -186,14 +191,14 @@
       "heading": "Which planet is closest to the Sun?",
       "description": "The solar system's planets are arranged in order of distance from our central star.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Venus"},
-          {"option": "Mercury"},
-          {"option": "Earth"},
-          {"option": "Mars"}
+          { "option": "Venus" },
+          { "option": "Mercury" },
+          { "option": "Earth" },
+          { "option": "Mars" }
         ],
-        "correctAnswer": "Mercury",
+        "correctAnswers": "Mercury",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -204,14 +209,14 @@
       "heading": "Who painted the Mona Lisa?",
       "description": "This Renaissance masterpiece is housed in the Louvre Museum and is famous for its subject's enigmatic smile.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Michelangelo"},
-          {"option": "Leonardo da Vinci"},
-          {"option": "Raphael"},
-          {"option": "Donatello"}
+          { "option": "Michelangelo" },
+          { "option": "Leonardo da Vinci" },
+          { "option": "Raphael" },
+          { "option": "Donatello" }
         ],
-        "correctAnswer": "Leonardo da Vinci",
+        "correctAnswers": "Leonardo da Vinci",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -222,14 +227,14 @@
       "heading": "What is the most abundant gas in Earth's atmosphere?",
       "description": "Earth's atmosphere consists of several gases in different proportions, with one making up the majority.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Oxygen"},
-          {"option": "Carbon dioxide"},
-          {"option": "Nitrogen"},
-          {"option": "Hydrogen"}
+          { "option": "Oxygen" },
+          { "option": "Carbon dioxide" },
+          { "option": "Nitrogen" },
+          { "option": "Hydrogen" }
         ],
-        "correctAnswer": "Nitrogen",
+        "correctAnswers": "Nitrogen",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -240,14 +245,14 @@
       "heading": "In which year did World War II end?",
       "description": "World War II concluded with the surrender of Japan following significant events in the Pacific theater.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "1944"},
-          {"option": "1945"},
-          {"option": "1946"},
-          {"option": "1947"}
+          { "option": "1944" },
+          { "option": "1945" },
+          { "option": "1946" },
+          { "option": "1947" }
         ],
-        "correctAnswer": "1945",
+        "correctAnswers": "1945",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -258,14 +263,14 @@
       "heading": "What is the currency of Japan?",
       "description": "Different countries have their own monetary systems and currency names, often reflecting cultural or historical significance.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Yuan"},
-          {"option": "Won"},
-          {"option": "Yen"},
-          {"option": "Rupiah"}
+          { "option": "Yuan" },
+          { "option": "Won" },
+          { "option": "Yen" },
+          { "option": "Rupiah" }
         ],
-        "correctAnswer": "Yen",
+        "correctAnswers": "Yen",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -276,14 +281,14 @@
       "heading": "How many bones are in an adult human body?",
       "description": "The human skeletal system provides structure and protection for organs, with the number of bones changing from infancy to adulthood.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "196"},
-          {"option": "206"},
-          {"option": "216"},
-          {"option": "226"}
+          { "option": "196" },
+          { "option": "206" },
+          { "option": "216" },
+          { "option": "226" }
         ],
-        "correctAnswer": "206",
+        "correctAnswers": "206",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -294,14 +299,14 @@
       "heading": "What is the deepest point in Earth's oceans?",
       "description": "Ocean trenches represent the deepest parts of our planet's surface, formed by tectonic plate movements.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Puerto Rico Trench"},
-          {"option": "Mariana Trench"},
-          {"option": "Japan Trench"},
-          {"option": "Peru-Chile Trench"}
+          { "option": "Puerto Rico Trench" },
+          { "option": "Mariana Trench" },
+          { "option": "Japan Trench" },
+          { "option": "Peru-Chile Trench" }
         ],
-        "correctAnswer": "Mariana Trench",
+        "correctAnswers": "Mariana Trench",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -313,10 +318,8 @@
       "description": "Many English words derive from other languages, reflecting historical influences and cultural exchanges.",
       "questionData": {
         "questionType": "sort",
-        "options": [
-          {"option": "Kindergarten"}
-        ],
-        "correctAnswer": "Categorize by language origin",
+        "options": [{ "option": "Kindergarten" }],
+        "correctAnswers": "Categorize by language origin",
         "categories": ["German Origin", "French Origin"],
         "correct_answer_mapping": {
           "German Origin": ["Kindergarten"],
@@ -330,14 +333,14 @@
       "heading": "Who invented the telephone?",
       "description": "This communication device revolutionized long-distance conversation and laid the foundation for modern telecommunications.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Thomas Edison"},
-          {"option": "Alexander Graham Bell"},
-          {"option": "Nikola Tesla"},
-          {"option": "Guglielmo Marconi"}
+          { "option": "Thomas Edison" },
+          { "option": "Alexander Graham Bell" },
+          { "option": "Nikola Tesla" },
+          { "option": "Guglielmo Marconi" }
         ],
-        "correctAnswer": "Alexander Graham Bell",
+        "correctAnswers": "Alexander Graham Bell",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -348,14 +351,14 @@
       "heading": "Which movie won the Academy Award for Best Picture in 1994?",
       "description": "The 1994 Academy Awards recognized outstanding films from 1993, with one particular drama taking the top honor.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "The Shawshank Redemption"},
-          {"option": "Forrest Gump"},
-          {"option": "Pulp Fiction"},
-          {"option": "Schindler's List"}
+          { "option": "The Shawshank Redemption" },
+          { "option": "Forrest Gump" },
+          { "option": "Pulp Fiction" },
+          { "option": "Schindler's List" }
         ],
-        "correctAnswer": "Schindler's List",
+        "correctAnswers": "Schindler's List",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -366,14 +369,14 @@
       "heading": "Which country has the largest land area?",
       "description": "Earth's landmasses are distributed unevenly among nations, with one country covering a significantly larger area than others.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Canada"},
-          {"option": "China"},
-          {"option": "United States"},
-          {"option": "Russia"}
+          { "option": "Canada" },
+          { "option": "China" },
+          { "option": "United States" },
+          { "option": "Russia" }
         ],
-        "correctAnswer": "Russia",
+        "correctAnswers": "Russia",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -384,14 +387,14 @@
       "heading": "What does 'CPU' stand for?",
       "description": "This component serves as the primary processing unit in computers, executing instructions and performing calculations.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Central Processing Unit"},
-          {"option": "Computer Processing Unit"},
-          {"option": "Central Program Unit"},
-          {"option": "Computer Program Unit"}
+          { "option": "Central Processing Unit" },
+          { "option": "Computer Processing Unit" },
+          { "option": "Central Program Unit" },
+          { "option": "Computer Program Unit" }
         ],
-        "correctAnswer": "Central Processing Unit",
+        "correctAnswers": "Central Processing Unit",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -402,14 +405,14 @@
       "heading": "Which is the longest river in the world?",
       "description": "Rivers play crucial roles in geography and human civilization, with some spanning vast distances across continents.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Amazon River"},
-          {"option": "Nile River"},
-          {"option": "Mississippi River"},
-          {"option": "Yangtze River"}
+          { "option": "Amazon River" },
+          { "option": "Nile River" },
+          { "option": "Mississippi River" },
+          { "option": "Yangtze River" }
         ],
-        "correctAnswer": "Nile River",
+        "correctAnswers": "Nile River",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -420,14 +423,14 @@
       "heading": "In which year was the first Nobel Prize awarded?",
       "description": "The Nobel Prize was established to honor outstanding contributions to humanity in various fields of achievement.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "1895"},
-          {"option": "1900"},
-          {"option": "1901"},
-          {"option": "1905"}
+          { "option": "1895" },
+          { "option": "1900" },
+          { "option": "1901" },
+          { "option": "1905" }
         ],
-        "correctAnswer": "1901",
+        "correctAnswers": "1901",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -438,14 +441,14 @@
       "heading": "In Greek mythology, who is the king of the gods?",
       "description": "Greek mythology features a pantheon of deities, with one supreme god ruling over Mount Olympus.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Poseidon"},
-          {"option": "Hades"},
-          {"option": "Zeus"},
-          {"option": "Apollo"}
+          { "option": "Poseidon" },
+          { "option": "Hades" },
+          { "option": "Zeus" },
+          { "option": "Apollo" }
         ],
-        "correctAnswer": "Zeus",
+        "correctAnswers": "Zeus",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -456,14 +459,14 @@
       "heading": "What does the medical term 'hypertension' refer to?",
       "description": "Medical terminology often uses Greek or Latin roots to describe conditions and symptoms in standardized ways.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Low blood sugar"},
-          {"option": "High blood pressure"},
-          {"option": "Rapid heartbeat"},
-          {"option": "Difficulty breathing"}
+          { "option": "Low blood sugar" },
+          { "option": "High blood pressure" },
+          { "option": "Rapid heartbeat" },
+          { "option": "Difficulty breathing" }
         ],
-        "correctAnswer": "High blood pressure",
+        "correctAnswers": "High blood pressure",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -474,14 +477,14 @@
       "heading": "Who wrote 'The Republic'?",
       "description": "This influential work of political philosophy explores justice, governance, and the ideal state.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Aristotle"},
-          {"option": "Socrates"},
-          {"option": "Plato"},
-          {"option": "Epicurus"}
+          { "option": "Aristotle" },
+          { "option": "Socrates" },
+          { "option": "Plato" },
+          { "option": "Epicurus" }
         ],
-        "correctAnswer": "Plato",
+        "correctAnswers": "Plato",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -492,14 +495,14 @@
       "heading": "What instrument is used to measure atmospheric pressure?",
       "description": "Atmospheric pressure measurement is crucial for weather forecasting and understanding meteorological conditions.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Thermometer"},
-          {"option": "Barometer"},
-          {"option": "Hygrometer"},
-          {"option": "Anemometer"}
+          { "option": "Thermometer" },
+          { "option": "Barometer" },
+          { "option": "Hygrometer" },
+          { "option": "Anemometer" }
         ],
-        "correctAnswer": "Barometer",
+        "correctAnswers": "Barometer",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -511,10 +514,8 @@
       "description": "Architectural styles reflect the cultural, technological, and artistic values of their respective time periods.",
       "questionData": {
         "questionType": "sort",
-        "options": [
-          {"option": "Flying buttress"}
-        ],
-        "correctAnswer": "Categorize by architectural period",
+        "options": [{ "option": "Flying buttress" }],
+        "correctAnswers": "Categorize by architectural period",
         "categories": ["Gothic Architecture", "Classical Architecture"],
         "correct_answer_mapping": {
           "Gothic Architecture": ["Flying buttress"],
@@ -528,14 +529,14 @@
       "heading": "What are the three primary colors in traditional color theory?",
       "description": "Primary colors cannot be created by mixing other colors and serve as the foundation for all other colors.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Red, green, blue"},
-          {"option": "Red, yellow, blue"},
-          {"option": "Red, orange, yellow"},
-          {"option": "Blue, green, purple"}
+          { "option": "Red, green, blue" },
+          { "option": "Red, yellow, blue" },
+          { "option": "Red, orange, yellow" },
+          { "option": "Blue, green, purple" }
         ],
-        "correctAnswer": "Red, yellow, blue",
+        "correctAnswers": "Red, yellow, blue",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -546,14 +547,14 @@
       "heading": "What does 'GDP' stand for?",
       "description": "This economic indicator measures the total value of goods and services produced within a country's borders.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Gross Domestic Product"},
-          {"option": "General Domestic Production"},
-          {"option": "Global Domestic Product"},
-          {"option": "Gross Development Program"}
+          { "option": "Gross Domestic Product" },
+          { "option": "General Domestic Production" },
+          { "option": "Global Domestic Product" },
+          { "option": "Gross Development Program" }
         ],
-        "correctAnswer": "Gross Domestic Product",
+        "correctAnswers": "Gross Domestic Product",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -564,14 +565,14 @@
       "heading": "Which ancient wonder of the world was located in Alexandria?",
       "description": "The Seven Wonders of the Ancient World represented remarkable architectural and engineering achievements of their time.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Hanging Gardens"},
-          {"option": "Lighthouse of Alexandria"},
-          {"option": "Colossus of Rhodes"},
-          {"option": "Temple of Artemis"}
+          { "option": "Hanging Gardens" },
+          { "option": "Lighthouse of Alexandria" },
+          { "option": "Colossus of Rhodes" },
+          { "option": "Temple of Artemis" }
         ],
-        "correctAnswer": "Lighthouse of Alexandria",
+        "correctAnswers": "Lighthouse of Alexandria",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -582,14 +583,14 @@
       "heading": "Which vitamin is produced when skin is exposed to sunlight?",
       "description": "The human body can synthesize certain vitamins, with one particularly important for bone health being produced through sun exposure.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Vitamin A"},
-          {"option": "Vitamin C"},
-          {"option": "Vitamin D"},
-          {"option": "Vitamin E"}
+          { "option": "Vitamin A" },
+          { "option": "Vitamin C" },
+          { "option": "Vitamin D" },
+          { "option": "Vitamin E" }
         ],
-        "correctAnswer": "Vitamin D",
+        "correctAnswers": "Vitamin D",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -600,14 +601,14 @@
       "heading": "How many notes are in a standard musical octave?",
       "description": "The octave is a fundamental concept in music theory, representing the interval between musical pitches.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "7"},
-          {"option": "8"},
-          {"option": "12"},
-          {"option": "16"}
+          { "option": "7" },
+          { "option": "8" },
+          { "option": "12" },
+          { "option": "16" }
         ],
-        "correctAnswer": "8",
+        "correctAnswers": "8",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -618,14 +619,14 @@
       "heading": "What is the time difference between Eastern and Pacific time zones in the US?",
       "description": "Time zones were established to standardize time across different geographical regions based on the sun's position.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "2 hours"},
-          {"option": "3 hours"},
-          {"option": "4 hours"},
-          {"option": "5 hours"}
+          { "option": "2 hours" },
+          { "option": "3 hours" },
+          { "option": "4 hours" },
+          { "option": "5 hours" }
         ],
-        "correctAnswer": "3 hours",
+        "correctAnswers": "3 hours",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -636,14 +637,14 @@
       "heading": "Which mammal is capable of true flight?",
       "description": "While many mammals can glide, only one group has evolved the ability for powered, sustained flight.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Flying squirrel"},
-          {"option": "Bat"},
-          {"option": "Sugar glider"},
-          {"option": "Flying lemur"}
+          { "option": "Flying squirrel" },
+          { "option": "Bat" },
+          { "option": "Sugar glider" },
+          { "option": "Flying lemur" }
         ],
-        "correctAnswer": "Bat",
+        "correctAnswers": "Bat",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -654,14 +655,14 @@
       "heading": "What is the lightest element on the periodic table?",
       "description": "The periodic table arranges elements by atomic number, with the simplest and lightest element having just one proton.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Helium"},
-          {"option": "Hydrogen"},
-          {"option": "Lithium"},
-          {"option": "Carbon"}
+          { "option": "Helium" },
+          { "option": "Hydrogen" },
+          { "option": "Lithium" },
+          { "option": "Carbon" }
         ],
-        "correctAnswer": "Hydrogen",
+        "correctAnswers": "Hydrogen",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -672,14 +673,14 @@
       "heading": "How many continents are there traditionally considered to be?",
       "description": "The division of Earth's landmasses into continents varies by cultural and geographical perspectives, but one number is most commonly accepted.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "5"},
-          {"option": "6"},
-          {"option": "7"},
-          {"option": "8"}
+          { "option": "5" },
+          { "option": "6" },
+          { "option": "7" },
+          { "option": "8" }
         ],
-        "correctAnswer": "7",
+        "correctAnswers": "7",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -690,14 +691,14 @@
       "heading": "In which city is Shakespeare's 'Romeo and Juliet' set?",
       "description": "Shakespeare's tragic love story takes place in an Italian city known for its romantic associations.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Venice"},
-          {"option": "Florence"},
-          {"option": "Verona"},
-          {"option": "Rome"}
+          { "option": "Venice" },
+          { "option": "Florence" },
+          { "option": "Verona" },
+          { "option": "Rome" }
         ],
-        "correctAnswer": "Verona",
+        "correctAnswers": "Verona",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -709,10 +710,8 @@
       "description": "Different vehicles are designed and optimized for specific environments and conditions.",
       "questionData": {
         "questionType": "sort",
-        "options": [
-          {"option": "Submarine"}
-        ],
-        "correctAnswer": "Categorize by operating environment",
+        "options": [{ "option": "Submarine" }],
+        "correctAnswers": "Categorize by operating environment",
         "categories": ["Underwater Vehicle", "Aerial Vehicle"],
         "correct_answer_mapping": {
           "Underwater Vehicle": ["Submarine"],
@@ -726,14 +725,14 @@
       "heading": "How many legs does an adult spider have?",
       "description": "Spiders belong to the arachnid family and have a characteristic number of legs that distinguishes them from insects.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "6"},
-          {"option": "8"},
-          {"option": "10"},
-          {"option": "12"}
+          { "option": "6" },
+          { "option": "8" },
+          { "option": "10" },
+          { "option": "12" }
         ],
-        "correctAnswer": "8",
+        "correctAnswers": "8",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -744,14 +743,14 @@
       "heading": "Who was the first President of the United States?",
       "description": "The first US President set many precedents and helped establish the foundations of American democracy.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "John Adams"},
-          {"option": "Thomas Jefferson"},
-          {"option": "George Washington"},
-          {"option": "Benjamin Franklin"}
+          { "option": "John Adams" },
+          { "option": "Thomas Jefferson" },
+          { "option": "George Washington" },
+          { "option": "Benjamin Franklin" }
         ],
-        "correctAnswer": "George Washington",
+        "correctAnswers": "George Washington",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -762,14 +761,14 @@
       "heading": "Approximately how fast does light travel in a vacuum?",
       "description": "The speed of light is a fundamental physical constant and represents the maximum speed at which information can travel.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "300,000 km/s"},
-          {"option": "300,000,000 m/s"},
-          {"option": "Both of the above"},
-          {"option": "Neither of the above"}
+          { "option": "300,000 km/s" },
+          { "option": "300,000,000 m/s" },
+          { "option": "Both of the above" },
+          { "option": "Neither of the above" }
         ],
-        "correctAnswer": "Both of the above",
+        "correctAnswers": "Both of the above",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -780,14 +779,14 @@
       "heading": "During which geological era did dinosaurs primarily exist?",
       "description": "Dinosaurs dominated terrestrial ecosystems for millions of years during a specific geological time period.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Paleozoic Era"},
-          {"option": "Mesozoic Era"},
-          {"option": "Cenozoic Era"},
-          {"option": "Precambrian Era"}
+          { "option": "Paleozoic Era" },
+          { "option": "Mesozoic Era" },
+          { "option": "Cenozoic Era" },
+          { "option": "Precambrian Era" }
         ],
-        "correctAnswer": "Mesozoic Era",
+        "correctAnswers": "Mesozoic Era",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -798,14 +797,14 @@
       "heading": "What happens to white light when it passes through a prism?",
       "description": "Prisms demonstrate the wave nature of light by separating it into its component wavelengths.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "It becomes invisible"},
-          {"option": "It splits into a spectrum of colors"},
-          {"option": "It becomes brighter"},
-          {"option": "It changes to blue light"}
+          { "option": "It becomes invisible" },
+          { "option": "It splits into a spectrum of colors" },
+          { "option": "It becomes brighter" },
+          { "option": "It changes to blue light" }
         ],
-        "correctAnswer": "It splits into a spectrum of colors",
+        "correctAnswers": "It splits into a spectrum of colors",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -816,14 +815,14 @@
       "heading": "Where were the first modern Olympic Games held?",
       "description": "The modern Olympic Games were revived in the 19th century, connecting to the ancient Greek tradition.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Rome, Italy"},
-          {"option": "Paris, France"},
-          {"option": "Athens, Greece"},
-          {"option": "London, England"}
+          { "option": "Rome, Italy" },
+          { "option": "Paris, France" },
+          { "option": "Athens, Greece" },
+          { "option": "London, England" }
         ],
-        "correctAnswer": "Athens, Greece",
+        "correctAnswers": "Athens, Greece",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -834,14 +833,14 @@
       "heading": "What is the largest desert in the world?",
       "description": "Deserts are defined by their low precipitation rather than temperature, leading to some surprising classifications.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Sahara Desert"},
-          {"option": "Gobi Desert"},
-          {"option": "Antarctic Desert"},
-          {"option": "Arabian Desert"}
+          { "option": "Sahara Desert" },
+          { "option": "Gobi Desert" },
+          { "option": "Antarctic Desert" },
+          { "option": "Arabian Desert" }
         ],
-        "correctAnswer": "Antarctic Desert",
+        "correctAnswers": "Antarctic Desert",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -852,14 +851,14 @@
       "heading": "Who is credited with the discovery of electricity?",
       "description": "While electricity was observed in ancient times, systematic study began with specific researchers in the 18th century.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Thomas Edison"},
-          {"option": "Benjamin Franklin"},
-          {"option": "Nikola Tesla"},
-          {"option": "Alessandro Volta"}
+          { "option": "Thomas Edison" },
+          { "option": "Benjamin Franklin" },
+          { "option": "Nikola Tesla" },
+          { "option": "Alessandro Volta" }
         ],
-        "correctAnswer": "Benjamin Franklin",
+        "correctAnswers": "Benjamin Franklin",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -870,14 +869,14 @@
       "heading": "What is the highest mountain peak in North America?",
       "description": "Mountain peaks are measured from sea level, with the highest representing significant geographical landmarks.",
       "questionData": {
-        "questionType": "mcq",
+        "questionType": "single",
         "options": [
-          {"option": "Mount McKinley (Denali)"},
-          {"option": "Mount Whitney"},
-          {"option": "Mount Washington"},
-          {"option": "Mount Mitchell"}
+          { "option": "Mount McKinley (Denali)" },
+          { "option": "Mount Whitney" },
+          { "option": "Mount Washington" },
+          { "option": "Mount Mitchell" }
         ],
-        "correctAnswer": "Mount McKinley (Denali)",
+        "correctAnswers": "Mount McKinley (Denali)",
         "categories": null,
         "correct_answer_mapping": null
       }
@@ -889,10 +888,8 @@
       "description": "Literary genres help classify works based on their style, content, and narrative structure.",
       "questionData": {
         "questionType": "sort",
-        "options": [
-          {"option": "The Odyssey"}
-        ],
-        "correctAnswer": "Categorize by literary genre",
+        "options": [{ "option": "The Odyssey" }],
+        "correctAnswers": "Categorize by literary genre",
         "categories": ["Epic Poetry", "Modern Novel"],
         "correct_answer_mapping": {
           "Epic Poetry": ["The Odyssey"],

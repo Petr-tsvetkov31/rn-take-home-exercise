@@ -11,7 +11,8 @@ import {
   Gesture,
 } from 'react-native-gesture-handler'
 import { scheduleOnRN } from 'react-native-worklets'
-import { useQuestionV2 } from '../../zus-store/question-store-v2'
+import { useQuestion } from '../../zus-store/question-store'
+import { SortQuestionData } from '../../api/queryQuestions'
 
 function getCategoryIndex(
   x: number,
@@ -46,10 +47,10 @@ export default function SortQuestion() {
   const answerHeight = useSharedValue(0)
   const categoryLayouts = useSharedValue<LayoutParams[]>([])
 
-  const question = useQuestionV2((s) => s.question)
-  const selectedCategoryIndex = useQuestionV2((s) => s.selectedCategoryIndex)
-  const onSelectCategory = useQuestionV2((s) => s.onSelectCategory)
-  const status = useQuestionV2((s) => s.status)
+  const question = useQuestion((s) => s.question)
+  const selectedCategoryIndex = useQuestion((s) => s.selectedCategoryIndex)
+  const onSelectCategory = useQuestion((s) => s.onSelectCategory)
+  const status = useQuestion((s) => s.status)
 
   const answerRef = useRef<View>(null)
 
@@ -157,10 +158,11 @@ export default function SortQuestion() {
       ? styles.error
       : {}
 
+  const questionData = question?.questionData as SortQuestionData
   return (
     <GestureHandlerRootView style={styles.container}>
       <View style={styles.categoriesContainer}>
-        {question?.questionData.categories?.map((category, index) => (
+        {questionData?.categories?.map((category, index) => (
           <Category
             key={index}
             index={index}
@@ -231,12 +233,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
-    width: '100%',
     gap: 10,
   },
   category: {
-    flex: 1,
-    height: '50%',
+    flexBasis: '45%',
+    height: '30%',
     backgroundColor: '#F7F7FB80',
     opacity: 0.5,
     borderRadius: 24,

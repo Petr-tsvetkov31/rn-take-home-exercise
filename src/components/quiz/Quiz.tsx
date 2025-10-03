@@ -5,7 +5,7 @@ import Question from '../question/Question'
 import Heading from '../heading/Heading'
 import { useSession } from '../../zus-store/session-store'
 import { useMutation } from '@tanstack/react-query'
-import { Status, useQuestionV2 } from '../../zus-store/question-store-v2'
+import { useQuestion } from '../../zus-store/question-store'
 import { useEffect } from 'react'
 import Progress from '../progress/Progress'
 
@@ -29,7 +29,7 @@ export default function Quiz(props: Props) {
     },
   })
 
-  const setQuestion = useQuestionV2((s) => s.setQuestion)
+  const setQuestion = useQuestion((s) => s.setQuestion)
 
   useEffect(() => {
     setQuestion(currentQuestion)
@@ -60,8 +60,10 @@ export default function Quiz(props: Props) {
         </View>
 
         <Text style={styles.questionTypeText}>
-          {currentQuestion.questionData.questionType === 'mcq'
+          {currentQuestion.questionData.questionType === 'single'
             ? 'Choose the correct answer'
+            : currentQuestion.questionData.questionType === 'mcq'
+            ? 'Choose all correct answers'
             : 'Drag into the correct category'}
         </Text>
 
